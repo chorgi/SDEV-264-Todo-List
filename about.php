@@ -6,8 +6,22 @@
 <section class="main-container">
             
     <div class="main-wrapper">
+        
+        <br>
+        <br>
+        <br>
+        
+        <?php
+        
+            if (isset($_SESSION['u_id'])) {
+                                
+               //$currentID = $_SESSION['current'];
+                $first = $_SESSION['u_first'];
+                echo "<h3>Welcome, $first!</h3>";
+            }
+        ?>
                 
-        <h2>About</h2>
+        <h1>About</h1>
             
     </div>
         

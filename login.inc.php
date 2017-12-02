@@ -43,11 +43,22 @@
                     } elseif ($hashedPwdCheck == true) {
                         
                         //Login user
-                        $_SESSION['u_id'] = row['user_id'];
-                        $_SESSION['u_first'] = row['user_first'];
-                        $_SESSION['u_last'] = row['user_last'];
-                        $_SESSION['u_email'] = row['user_email'];
-                        $_SESSION['u_uid'] = row['user_uid'];
+                        $_SESSION['u_id'] = $row['user_id'];
+                        $_SESSION['u_first'] = $row['user_first'];
+                        $_SESSION['u_last'] = $row['user_last'];
+                        $_SESSION['u_email'] = $row['user_email'];
+                        $_SESSION['u_uid'] = $row['user_uid'];
+                        
+                        $_SESSION['current'] = $uid;
+                        
+                     /* $first = "SELECT user_first FROM users WHERE user_uid = $uid;";
+                        $firstResult = mysqli_query($conn, $first);
+                        
+                        $last = "SELECT user_last FROM users WHERE user_uid = $uid;";
+                        $lastResult = mysqli_query($conn, $last);
+                        
+                        $_SESSION['first'] = $firstResult;
+                        $_SESSION['last'] = $lastResult; */
                         
                         header("Location: ../index.php?login=success");
                         exit();

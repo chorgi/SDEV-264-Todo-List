@@ -6,8 +6,12 @@
 <section class="main-container">
             
     <div class="main-wrapper">
+        
+        <br>
+        <br>
+        <br>
                 
-        <h2>Sign Up</h2>
+        <h1>Sign Up</h1>
                 
         <form class="signup-form" action="includes/signup.inc.php" method="POST"> 
                     
