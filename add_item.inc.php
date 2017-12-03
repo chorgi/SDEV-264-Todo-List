@@ -1,7 +1,18 @@
 <?php
 
+    /*
+    
+        Project: Todo list web app for SDEV 265 student project
+        Filename: add_item.inc.php
+        Status: Active
+    
+    */
+
+    // this file adds todo list items to the database
+
     session_start();
 
+     // adds a new item to the todo list 
      if (isset($_POST['submit'])) {
          
          include 'dbh.inc.php';

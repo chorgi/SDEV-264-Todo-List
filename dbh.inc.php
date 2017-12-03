@@ -1,11 +1,27 @@
 <?php
 
+     /*
+    
+        Project: Todo list web app for SDEV 265 student project
+        Filename: dbh.inc.php
+        Status: Active
+    
+    */
+
+    // This file creates the database connection
+
     $dbServername = "localhost";
 
-    //$dbUsername = "root";
-    //$dbPassword = "";
-    //$dbName = "loginsystem";
+    /*
+
+    // Database connect for local server
+    $dbUsername = "root";
+    $dbPassword = "";
+    $dbName = "loginsystem"; 
     
+    */
+    
+    // Database connect for live web server.
     $dbUsername = "joshivy";
     $dbPassword = "ivytech";
     $dbName = "todo_list";

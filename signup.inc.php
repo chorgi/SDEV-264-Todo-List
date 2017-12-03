@@ -1,5 +1,15 @@
 <?php
 
+     /*
+    
+        Project: Todo list web app for SDEV 265 student project
+        Filename: signup.inc.php
+        Status: Active
+    
+    */
+
+    // this file adds a new user to the user table in the database
+
     if (isset($_POST['submit'])) {
         
         include_once 'dbh.inc.php';

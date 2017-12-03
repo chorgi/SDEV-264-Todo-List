@@ -1,5 +1,15 @@
 <?php
 
+     /*
+    
+        Project: Todo list web app for SDEV 265 student project
+        Filename: login.inc.php
+        Status: Active
+    
+    */
+
+    // this file logs a user in
+
     session_start();
 
     if (isset($_POST['submit'])) {
@@ -48,7 +58,6 @@
                         $_SESSION['u_last'] = $row['user_last'];
                         $_SESSION['u_email'] = $row['user_email'];
                         $_SESSION['u_uid'] = $row['user_uid'];
-                        
                         $_SESSION['current'] = $uid;
                         
                      /* $first = "SELECT user_first FROM users WHERE user_uid = $uid;";

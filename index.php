@@ -1,3 +1,11 @@
+<!--
+
+Project: Todo list web app for SDEV 265 student project
+Filename: index.php
+Status: Active
+
+-->
+
 <?php
 
     include_once 'header.php';
@@ -12,6 +20,8 @@
         <br>
         
         <?php
+        
+            // Verify's that a user session is in place and welcome's a user if they are logged in.
         
             if (isset($_SESSION['u_id'])) {
                                 

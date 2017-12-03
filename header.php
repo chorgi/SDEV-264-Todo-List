@@ -1,5 +1,14 @@
+<!--
+
+Project: Todo list web app for SDEV 265 student project
+Filename: header.php
+Status: Active
+
+-->
+
 <?php
 
+    // Ensures active session on all pages. 
     session_start();
 ?>
 
@@ -23,7 +32,10 @@
                         <div class="main-wrapper">
 
                         <?php
-
+                            
+                            
+                            // Verifies that a user is logged in by ensuring a session is in place.
+                            // Shows the nav changes for a logged in user.
                             if (isset($_SESSION['u_id'])) {
                                 
                                 $currentID = $_SESSION['current'];
@@ -48,6 +60,8 @@
                                 </div>';   
 
                             } else {
+                                
+                                // Shows the nav for when a user is not logged in.
 
                                 echo '<ul>
 
