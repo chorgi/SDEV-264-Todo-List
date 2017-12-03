@@ -1,4 +1,14 @@
+<!--
+
+Project: Todo list web app for SDEV 265 student project
+Filename: todo.php
+Status: Active
+
+-->
+
 <?php
+
+    // Verifies a user is logged in before they can see or use the todo list. 
 
     include_once 'header.php';
 
@@ -19,6 +29,7 @@
         
         <?php
         
+            // Welcomes the user
             if (isset($_SESSION['u_id'])) {
                                 
                 //$currentID = $_SESSION['current'];
@@ -50,7 +61,8 @@
         <form class="signup-form" method="post">
         
         <?php
-        
+            
+            // redirects to file that updates and displays the actual active todo list
             include_once 'includes/update_item.inc.php';
         ?>
             

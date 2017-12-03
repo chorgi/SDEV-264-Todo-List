@@ -1,9 +1,21 @@
 /* 
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com 
-Twitter: @rich_clark
+
+    Project: Todo list web app for SDEV 265 student project
+    Filename: style.css
+    Status: Active
+
+*/
+
+/* 
+
+    html5doctor.com Reset Stylesheet
+    v1.6.1
+    Last Updated: 2010-09-17
+    Author: Richard Clark - http://richclarkdesign.com 
+    Twitter: @rich_clark
+
+    This is commonly used by a lot of web developers to reset all of the css properties so they can work with a clean slate. 
+    Credit to owner/creator, as requested given above.
 */
 
 html, body, div, span, object, iframe,
@@ -101,7 +113,7 @@ input, select {
     vertical-align:middle;
 }
 
-/* My Code */
+/* Start of Our Code */
 
 .main-wrapper {
     
@@ -118,6 +130,8 @@ body {
     
     background-color: #ccc;
 }
+
+/* Header */
 
 header nav {
     
@@ -217,6 +231,8 @@ header .nav-login a {
     line-height: 63px;
 }
 
+/* Main body */
+
 .main-container {
     
     padding-top: 40px;
@@ -251,6 +267,8 @@ header .nav-login a {
 }
 
 /*signup.php*/
+
+/* This is also used to keep the todo list items centered on the page. */
 
 .signup-form {
     

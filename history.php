@@ -1,4 +1,14 @@
+<!--
+
+Project: Todo list web app for SDEV 265 student project
+Filename: history.php
+Status: Active
+
+-->
+
 <?php
+
+    // Verifies that a user is logged in before they can see the todo list history
 
     include_once 'header.php';
 
@@ -22,6 +32,8 @@
         <form class="signup-form">
         
             <?php
+            
+                // Displays the todo list history
         
                 include 'includes/dbh.inc.php';
         
